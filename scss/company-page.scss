@@ -55,10 +55,15 @@ body{
 
   header{
     .header_wrap{
-      max-width: 1060px;
-      width: 100%;
+      max-width: 1500px;
+      width: 95%;
       margin: 0 auto;
       padding: 32px 0 31px ;
+
+      @include pc{
+        max-width: 1024px;
+        width: 95%;
+      }
 
       .header_block{
         display: flex;
@@ -66,12 +71,18 @@ body{
     
       .header_logo{
         display: flex;
+
         img{
           width: 70px;
         }/*img*/
 
         h1{
           font-size: 34px;
+
+          @include pc{
+            font-size: 30px;
+          }
+
           .header_logo_sub{
             display: block;
             font-size: 15px;
@@ -89,18 +100,35 @@ body{
           text-align: center;
           padding-right: 24.4px;
           border-right: 1px solid #6B7483;
+          font-size: 18px;
+
+
+          @include pc{
+            padding-right: 12px;
+            font-size: 14px;
+          }
+  
         }
 
         .header_tel{
           padding-left: 25.6px;
           margin-right: 23px;
+          font-size: 20px;
 
-          p{
+          @include pc{
+            display: none;
+          }
+
+          .area{
+            font-size: 18px;
+
             
             span{
               margin-left: 12px;
               font-family: 'Oswald', sans-serif;
               font-weight: 500;
+              font-size: 20px;
+
               img{
                 width: 13px;
               }
@@ -112,6 +140,11 @@ body{
         .btn{
           width: 218px;
           margin: 0 auto;
+
+          @include pc{
+            margin-left: 10px;
+            width: 200px;
+          }
 
           @include tab{
               width: 250px;
@@ -155,6 +188,12 @@ body{
         display: flex;
         justify-content: center;
 
+        @include pc{
+          margin: 0 auto;
+          flex-wrap: wrap;
+          width: 650px;
+        }
+
         li{
           border-right: 1px solid #222222;
           color: #222222;
@@ -169,9 +208,15 @@ body{
             transform: skewX(-150deg);
             font-size: 18px;
             font-weight: bold;
+            letter-spacing: 0.9px;
           }
 
         }/*li*/
+
+        li:last-child{
+          border-right: none;
+        }/*last-child*/
+
       }/*ul*/
     }/*nav*/
 
@@ -251,18 +296,23 @@ body{
                       padding: 35px 0 35px 50px;
                       width: 256px;
                       text-align: left;
+                      letter-spacing: 2.6px;
                   }
 
                   td{
                     background-color: #F2F2F2;
                     padding: 39px 0 36px 47px;
                     font-size: 22px;
+                    line-height: 2.27;
+                    letter-spacing: 2.2px;
+
                 }
               }/*tr*/
           }/*company_table*/
 
           .text{
-              line-height: 1.8;
+              line-height: 1.875;
+              letter-spacing: 0.4px;
           }/*text*/
 
           .group_table{
