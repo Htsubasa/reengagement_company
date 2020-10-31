@@ -425,6 +425,7 @@ html body header .header_wrap .header_block .header_info .header_tel {
   padding-left: 25.6px;
   margin-right: 23px;
   font-size: 20px;
+  /*area*/
 }
 
 @media (max-width: 1024px) {
@@ -435,6 +436,7 @@ html body header .header_wrap .header_block .header_info .header_tel {
 
 html body header .header_wrap .header_block .header_info .header_tel .area {
   font-size: 18px;
+  /*span*/
 }
 
 html body header .header_wrap .header_block .header_info .header_tel .area span {
@@ -442,10 +444,13 @@ html body header .header_wrap .header_block .header_info .header_tel .area span 
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 20px;
+  /*img*/
 }
 
 html body header .header_wrap .header_block .header_info .header_tel .area span img {
-  width: 13px;
+  width: 19px;
+  height: 18px;
+  margin-right: 2px;
 }
 
 html body header .header_wrap .header_block .header_info .btn {
